@@ -2,9 +2,109 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Força modo moderno em navegadores antigos -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Viewport para todos os dispositivos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+
     <title>Auris</title>
+
+    <!-- CSS externo -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- HTML5 Shiv para IE8 e anteriores -->
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!-- Polyfill para funções JS modernas -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.15/es5-shim.min.js"></script>
+
+    <style>
+        /* Fonte padrão segura */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        /* Layout adaptável para qualquer resolução */
+        .slide-completo {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 10px;
+            max-width: 1400px;
+            margin: auto;
+            padding: 10px;
+        }
+
+        .lado-wrapper, .slideshow {
+            flex: 1 1 300px;
+            box-sizing: border-box;
+        }
+
+        /* Imagens adaptáveis */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+            border-radius: 5px;
+        }
+
+        /* Botões adaptáveis */
+        input[type="button"] {
+            padding: 10px 20px;
+            font-size: 1rem;
+            margin-top: 5px;
+            cursor: pointer;
+        }
+
+        /* Fallback se flex não for suportado */
+        @supports not (display: flex) {
+            .slide-completo {
+                display: block;
+            }
+            .lado-wrapper, .slideshow {
+                display: block;
+                width: 100%;
+            }
+        }
+
+        /* Responsividade para tablets e notebooks menores */
+        @media (max-width: 1024px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            input[type="button"] {
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Responsividade para celulares */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* Responsividade para celulares muito pequenos */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.2rem;
+            }
+            input[type="button"] {
+                width: 100%;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <h1>
@@ -15,28 +115,28 @@
     <div class="slide-completo">
         <div class="lado-wrapper">
             <img src="fundoamazonia.jpeg" alt="imgama">
-            <input type="button" value="Ver causa" id = 'amazon'>
+            <input type="button" value="Ver causa" id="amazon">
         </div>
 
         <div class="slideshow">
-    <img src="imagem1.jpeg" alt="Slide 1" class="active">
-    <img src="imagem2.jpeg" alt="Slide 2">
-    <img src="imagem03.jpeg" alt="Slide 3">
-    <img src="minha_imagem.jpeg" alt="Slide 4">
-    <img src="joiasvermelhas.jpeg" alt="Slide 5">
-    <img src="joiasverdes.jpeg" alt="Slide 6">
-    <img src="perolas.jpeg" alt="Slide 7">
-    <img src="joiasroxas.jpeg" alt="Slide 8">
-</div>
+            <img src="imagem1.jpeg" alt="Slide 1" class="active">
+            <img src="imagem2.jpeg" alt="Slide 2">
+            <img src="imagem03.jpeg" alt="Slide 3">
+            <img src="minha_imagem.jpeg" alt="Slide 4">
+            <img src="joiasvermelhas.jpeg" alt="Slide 5">
+            <img src="joiasverdes.jpeg" alt="Slide 6">
+            <img src="perolas.jpeg" alt="Slide 7">
+            <img src="joiasroxas.jpeg" alt="Slide 8">
+        </div>
 
         <div class="lado-wrapper">
             <img src="aacd.jpeg" alt="imgaa">
-            <input type="button" value="Ver causa" id = 'siteacd'>
+            <input type="button" value="Ver causa" id="siteacd">
         </div>
     </div>
 
     <div id="botao">
-        <input type="button" value="Ver produtos" id ='see'>
+        <input type="button" value="Ver produtos" id="see">
     </div>
 
     <footer>&copy; Spectree</footer> 
