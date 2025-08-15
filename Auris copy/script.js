@@ -41,27 +41,27 @@ document.addEventListener("DOMContentLoaded", function () {
         switch(id) {
             case '1':
                 produtoImg.src = 'minha_imagem.jpeg';
-                mensagem = "Você acaba de comprar o conjunto de diamantes<br>Valor: 3,000R$<br>Valor destinado à doação: 1,000R$<br>Infelizmente só estamos com a função de PIX habilitada atualmente<br>";
+                mensagem = "Você acaba de comprar o conjunto de diamantes<br>Valor: 3,000R$<br>Valor destinado à doação: 1,000R$<br>Colaborando com Fundo Amazonia<br>Infelizmente só estamos com a função de PIX habilitada atualmente<br>";
                 linkQRCode = "https://seusite.com/pagamento?id=1";
                 break;
             case '2':
                 produtoImg.src = 'joiasvermelhas.jpeg';
-                mensagem = "Você acaba de comprar o conjunto de rubis<br>Valor: 10,000R$<br>Valor destinado à doação: 4,000R$<br>Infelizmente só estamos com a função de PIX habilitada atualmente<br>";
+                mensagem = "Você acaba de comprar o conjunto de rubis<br>Valor: 10,000R$<br>Valor destinado à doação: 4,000R$<br>Colaborando com AACD<br>Infelizmente só estamos com a função de PIX habilitada atualmente<br>";
                 linkQRCode = "https://seusite.com/pagamento?id=2";
                 break;
             case '3':
                 produtoImg.src = 'joiasverdes.jpeg';
-                mensagem = "Você acaba de comprar o conjunto de esmeraldas<br>Valor: 9,000R$<br>Valor destinado à doação: 2,000R$<br>Infelizmente só estamos com a função de PIX habilitada atualmente<br>";
+                mensagem = "Você acaba de comprar o conjunto de esmeraldas<br>Valor: 9,000R$<br>Valor destinado à doação: 2,000R$<br>Colaborando com Fundo Amazonia<br>Infelizmente só estamos com a função de PIX habilitada atualmente<br>";
                 linkQRCode = "https://seusite.com/pagamento?id=3";
                 break;
             case '4':
                 produtoImg.src = 'perolas.jpeg';
-                mensagem = "Você acaba de comprar o conjunto de pérolas e ouro<br>Valor: 8,000R$<br>Valor destinado à doação: 3,000R$<br>Infelizmente só estamos com a função de PIX habilitada atualmente<br>";
+                mensagem = "Você acaba de comprar o conjunto de pérolas e ouro<br>Valor: 8,000R$<br>Valor destinado à doação: 3,000R$<br>Colaborando com AACD<br>Infelizmente só estamos com a função de PIX habilitada atualmente<br>";
                 linkQRCode = "https://seusite.com/pagamento?id=4";
                 break;
             case '5':
                 produtoImg.src = 'joiasroxas.jpeg';
-                mensagem = "Você acaba de comprar o conjunto de diamantes roxo<br>Valor: 100,000R$<br>Valor destinado à doação: 20,000R$<br>Infelizmente só estamos com a função de PIX habilitada atualmente<br>";
+                mensagem = "Você acaba de comprar o conjunto de diamantes roxo<br>Valor: 100,000R$<br>Valor destinado à doação: 20,000R$<br>Colaborando com Fundo amazonia<br>Infelizmente só estamos com a função de PIX habilitada atualmente<br>";
                 linkQRCode = "https://seusite.com/pagamento?id=5";
                 break;
             default:
@@ -98,3 +98,4 @@ aacd.onclick = () => {
 amazonia.onclick = () => { 
     window.location = 'https://www.fundoamazonia.gov.br/pt/home/'; 
 };
+
